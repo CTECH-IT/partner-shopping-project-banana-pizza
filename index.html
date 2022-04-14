@@ -1,90 +1,95 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <title>My Awesome Website</title>
-    <meta name="author" content="Put your name here">
-    
-    <!-- If you are using p5.js to create drawings or games, uncomment the next line: -->
-    <!--
+<head>
+  <meta charset="utf-8">
+  <title>Food Plaza</title>
+  <meta name="author" content="Put your name here">
+
+  <!-- If you are using p5.js to create drawings or games, uncomment the next line: -->
+  <!--
       <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
     -->
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-  </head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
 
 <body>
   <header>
-    <h2>Dominos Order Form</h2>
-    <p><a href="https://www.dominos.com/en/pages/order/menu#!/menu/category/viewall/">Menu Link</a>
-    </p>
-    <div class="row">
-      <div class="col-75">
-        <div class="container">
-          <form action="/action_page.php">
-          
-            <div class="row">
-              <div class="col-50">
-                <h3>Pizza and Toppings</h3>
-                <label for="psize">Size</label>
-                <input type="text" id="psize" name="pizzasize" placeholder="Pizza Size">
-                <label for="sauce">Sauce</label>
-                <input type="text" id="sauce" name="pizzasauce" placeholder="Sauce Type">
-                <label for="topping1">Topping 1</label>
-                <input type="text" id="topping1" name="toppings" placeholder="Choose Topping 1">
-                <label for="topping2">Topping 2</label>
-                <input type="text" id="topping2" name="toppings" placeholder="Choose Topping 2">
-    
-            
-              </div>
-    
-              <div class="col-50">
-                <h3>Extras</h3>
-    
-                <label for="cname">Breadsticks</label>
-                <input type="text" id="breadsticks" name="breadsticks" placeholder="Choose Breadsticks">
-                <label for="ccnum">Dipping Sauce</label>
-                <input type="text" id="dippingsauce" name="dippingsauce" placeholder="Choose Dipping Sauce">
-                <label for="expmonth">Drinks</label>
-                <input type="text" id="drinks" name="expmonth" placeholder="Choose Drink">
-                <div class="row">
-                  <div class="col-50">
-                    <label for="firstname">First Name</label>
-                    <input type="text" id="expyear" name="expyear" placeholder="First">
-                  </div>
-                  <div class="col-50">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="Last">
-                 
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">Dominos</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Caribou</button>
+    </div>
+
+    <div id="London" class="tabcontent">
+      <p>
+      <h2>Dominos Order Form</h2>
+      <p>
+        Add TYPE and QUANTITY</p><p><a href="https://www.dominos.com/en/pages/order/menu#!/menu/category/viewall/">Menu Link</a>
+      </p>
+      <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+
+              <div class="row">
+                <div class="col-50">
+                  <h3>Pizza and Toppings</h3>
+                  <label for="psize">Size</label>
+                  <input type="text" id="psize" name="pizzasize" placeholder="Pizza Size">
+                  <label for="sauce">Sauce</label>
+                  <input type="text" id="sauce" name="pizzasauce" placeholder="Sauce Type">
+                  <label for="topping1">Topping 1</label>
+                  <input type="text" id="topping1" name="toppings" placeholder="Choose Topping 1">
+                  <label for="topping2">Topping 2</label>
+                  <input type="text" id="topping2" name="toppings" placeholder="Choose Topping 2">
+
+
                 </div>
-              </div>
-              
-            </div>
-            <label>
-              <input type="checkbox" checked="checked" name="sameadr"> Confirm Order
-            </label>
-            <input type="submit" value="Checkout" class="btn">
-          </form>
-        </div>
-      </div>
-      <div class="col-25">
-        <div class="container">
-          <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-          <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-          <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-          <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-          <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-          <hr>
-          <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+
+                <div class="col-50">
+                  <h3>Extras</h3>
+
+                  <label for="cname">Breadsticks</label>
+                  <input type="text" id="breadsticks" name="breadsticks" placeholder="Choose Breadsticks">
+                  <label for="ccnum">Dipping Sauce</label>
+                  <input type="text" id="dippingsauce" name="dippingsauce" placeholder="Choose Dipping Sauce">
+                  <label for="expmonth">Drinks</label>
+                  <input type="text" id="drinks" name="expmonth" placeholder="Choose Drink">
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="firstname">First Name</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="First">
+                    </div>
+                    <div class="col-50">
+                      <label for="lastname">Last Name</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="Last">
+
+                    </div>
+                  </div>
+
+                </div>
+                <label>
+                  <input type="checkbox" checked="checked" name="sameadr"> Confirm Order
+                </label>
+                <input type="submit" value="Checkout" class="btn">
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    
-    <script src="/033f92c9c0c77603e210e4c58895e582c7f6d80713029ee25ff428b260209f46/ns.js"></script><script src="/033f92c9c0c77603e210e4c58895e582c7f6d80713029ee25ff428b260209f46/ns.js"></script></body>
-  </header>
-
-  <script src="scripts/main.js"></script>
+    </div>
+    </p>
+    <div id="Paris" class="tabcontent">
+      <p></p>
+    </div>
+    <script src="/033f92c9c0c77603e210e4c58895e582c7f6d80713029ee25ff428b260209f46/ns.js"></script>
 </body>
+</header>
+
+<script src="scripts/main.js"></script>
+</body>
+
 </html>
