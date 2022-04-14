@@ -17,8 +17,72 @@
 
 <body>
   <header>
-    <h1 class="page-title">My Awesome Website</h1>
-    <p>This is some awesome text.</p>
+    <h2>Dominos Order Form</h2>
+    <p><a href="https://www.dominos.com/en/pages/order/menu#!/menu/category/viewall/">Menu Link</a>
+    </p>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="/action_page.php">
+          
+            <div class="row">
+              <div class="col-50">
+                <h3>Pizza and Toppings</h3>
+                <label for="psize">Size</label>
+                <input type="text" id="psize" name="pizzasize" placeholder="Pizza Size">
+                <label for="sauce">Sauce</label>
+                <input type="text" id="sauce" name="pizzasauce" placeholder="Sauce Type">
+                <label for="topping1">Topping 1</label>
+                <input type="text" id="topping1" name="toppings" placeholder="Choose Topping 1">
+                <label for="topping2">Topping 2</label>
+                <input type="text" id="topping2" name="toppings" placeholder="Choose Topping 2">
+    
+            
+              </div>
+    
+              <div class="col-50">
+                <h3>Extras</h3>
+    
+                <label for="cname">Breadsticks</label>
+                <input type="text" id="breadsticks" name="breadsticks" placeholder="Choose Breadsticks">
+                <label for="ccnum">Dipping Sauce</label>
+                <input type="text" id="dippingsauce" name="dippingsauce" placeholder="Choose Dipping Sauce">
+                <label for="expmonth">Drinks</label>
+                <input type="text" id="drinks" name="expmonth" placeholder="Choose Drink">
+                <div class="row">
+                  <div class="col-50">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="First">
+                  </div>
+                  <div class="col-50">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="Last">
+                 
+                </div>
+              </div>
+              
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Confirm Order
+            </label>
+            <input type="submit" value="Checkout" class="btn">
+          </form>
+        </div>
+      </div>
+      <div class="col-25">
+        <div class="container">
+          <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+          <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+          <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+          <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+          <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+          <hr>
+          <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="/033f92c9c0c77603e210e4c58895e582c7f6d80713029ee25ff428b260209f46/ns.js"></script><script src="/033f92c9c0c77603e210e4c58895e582c7f6d80713029ee25ff428b260209f46/ns.js"></script></body>
   </header>
 
   <script src="scripts/main.js"></script>
