@@ -13,6 +13,10 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -28,54 +32,105 @@
       <p>
       <h2>Dominos Order Form</h2>
       <p>
-        Add TYPE and QUANTITY</p><p><a href="https://www.dominos.com/en/pages/order/menu#!/menu/category/viewall/">Menu Link</a>
+        Add TYPE and QUANTITY</p>
+      <p><a href="https://www.dominos.com/en/pages/order/menu#!/menu/category/viewall/">Menu Link</a>
       </p>
-      <div class="row">
+      <div class="dropdown">
         <div class="col-75">
           <div class="container">
             <form action="/action_page.php">
 
-              <div class="row">
-                <div class="col-50">
-                  <h3>Pizza and Toppings</h3>
-                  <label for="psize">Size</label>
-                  <input type="text" id="psize" name="pizzasize" placeholder="Pizza Size">
-                  <label for="sauce">Sauce</label>
-                  <input type="text" id="sauce" name="pizzasauce" placeholder="Sauce Type">
-                  <label for="topping1">Topping 1</label>
-                  <input type="text" id="topping1" name="toppings" placeholder="Choose Topping 1">
-                  <label for="topping2">Topping 2</label>
-                  <input type="text" id="topping2" name="toppings" placeholder="Choose Topping 2">
 
-
-                </div>
-
-                <div class="col-50">
-                  <h3>Extras</h3>
-
-                  <label for="cname">Breadsticks</label>
-                  <input type="text" id="breadsticks" name="breadsticks" placeholder="Choose Breadsticks">
-                  <label for="ccnum">Dipping Sauce</label>
-                  <input type="text" id="dippingsauce" name="dippingsauce" placeholder="Choose Dipping Sauce">
-                  <label for="expmonth">Drinks</label>
-                  <input type="text" id="drinks" name="expmonth" placeholder="Choose Drink">
-                  <div class="row">
-                    <div class="col-50">
-                      <label for="firstname">First Name</label>
-                      <input type="text" id="expyear" name="expyear" placeholder="First">
+              <div class="col-100">
+                <h3>Pizza and Toppings</h3>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Pizza Size
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Small</a>
+                    <a class="dropdown-item" href="#">Medium</a>
+                    <a class="dropdown-item" href="#">Large</a>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      Pizza Topping 1
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Cheese</a>
+                      <a class="dropdown-item" href="#">Pepperoni</a>
+                      <a class="dropdown-item" href="#">Sausage</a>
                     </div>
-                    <div class="col-50">
-                      <label for="lastname">Phone #</label>
-                      <input type="text" id="cvv" name="cvv" placeholder="Phone #">
-
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Pizza Topping 2
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">None</a>
+                        <a class="dropdown-item" href="#">Cheese</a>
+                        <a class="dropdown-item" href="#">Pepperoni</a>
+                        <a class="dropdown-item" href="#">Sausage</a>
+                      </div>
                     </div>
+
+
                   </div>
 
-                </div>
-                <label>
-                  <input type="checkbox" checked="checked" name="sameadr"> Confirm Order
-                </label>
-                <input type="submit" value="Checkout" class="btn">
+                  <div class="col-100">
+                    <h3>Extras</h3>
+
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Breadsticks
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Parmesan</a>
+                        <a class="dropdown-item" href="#">Garlic</a>
+                        <a class="dropdown-item" href="#">Cinnamon</a>
+                      </div>
+                    </div>
+
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Pizza Topping 2
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Marinera</a>
+                        <a class="dropdown-item" href="#">Garlic</a>
+                        <a class="dropdown-item" href="#">Ranch</a>
+                        <a class="dropdown-item" href="#">Icing</a>
+                      </div>
+                    </div>
+                
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Drinks
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Root Beer</a>
+                        <a class="dropdown-item" href="#">Coke</a>
+                        <a class="dropdown-item" href="#">Diet Coke</a>
+                        <a class="dropdown-item" href="#">Fanta Orange</a>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="First">
+                      </div>
+                      <div class="col-50">
+                        <label for="lastname">Phone #</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="Phone #">
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Confirm Order
+                  </label>
+                  <input type="submit" value="Checkout" class="btn">
             </form>
           </div>
         </div>
