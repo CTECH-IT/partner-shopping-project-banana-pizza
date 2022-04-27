@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="stylesheets/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -22,131 +23,115 @@
 <body>
   <header>
 
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'London')">Dominos</button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Caribou</button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Orders</button>
-    </div>
-
-    <div id="London" class="tabcontent">
-      <p>
-      <h2>Dominos Order Form</h2>
-      <p>
-        Add TYPE and QUANTITY</p>
+    <div class="container">
+      <h3>Dominos Order Form</h3>
       <p><a href="https://www.dominos.com/en/pages/order/menu#!/menu/category/viewall/">Menu Link</a>
-      </p>
-      <div class="dropdown">
-        <div class="col-75">
-          <div class="container">
-            <form action="/action_page.php">
 
-
-              <div class="col-100">
-                <h3>Pizza and Toppings</h3>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    Pizza Size
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Small</a>
-                    <a class="dropdown-item" href="#">Medium</a>
-                    <a class="dropdown-item" href="#">Large</a>
-                  </div>
-                  <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                      Pizza Topping 1
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Cheese</a>
-                      <a class="dropdown-item" href="#">Pepperoni</a>
-                      <a class="dropdown-item" href="#">Sausage</a>
-                    </div>
-                    <div class="dropdown">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Pizza Topping 2
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">None</a>
-                        <a class="dropdown-item" href="#">Cheese</a>
-                        <a class="dropdown-item" href="#">Pepperoni</a>
-                        <a class="dropdown-item" href="#">Sausage</a>
-                      </div>
-                    </div>
-
-
-                  </div>
-
-                  <div class="col-100">
-                    <h3>Extras</h3>
-
-                    <div class="dropdown">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Breadsticks
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Parmesan</a>
-                        <a class="dropdown-item" href="#">Garlic</a>
-                        <a class="dropdown-item" href="#">Cinnamon</a>
-                      </div>
-                    </div>
-
-                    <div class="dropdown">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dipping Sauce
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Marinera</a>
-                        <a class="dropdown-item" href="#">Garlic</a>
-                        <a class="dropdown-item" href="#">Ranch</a>
-                        <a class="dropdown-item" href="#">Icing</a>
-                      </div>
-                    </div>
-
-                    <div class="dropdown">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Drinks
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Root Beer</a>
-                        <a class="dropdown-item" href="#">Coke</a>
-                        <a class="dropdown-item" href="#">Diet Coke</a>
-                        <a class="dropdown-item" href="#">Fanta Orange</a>
-                      </div>
-                    </div>
-
-                    <h3>Customer Contact Information</h3>
-                    <div class="row">
-                      <div class="col-50">
-                        <label for="firstname">First Name</label>
-                        <input type="text" id="expyear" name="expyear" placeholder="First">
-                      </div>
-                      <div class="col-50">
-                        <label for="lastname">Phone #</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="Phone #">
-
-                      </div>
-                    </div>
-
-                  </div>
-                  <label>
-                    <input type="checkbox" checked="checked" name="sameadr"> Confirm Order
-                  </label>
-                  <input type="submit" value="Checkout" class="btn">
-            </form>
-          </div>
-        </div>
+        <div class="row">
+      <h4>Pizza Toppings</h4>
+      <div class="column">
+        <label class="image-checkbox">
+          <img class="img-responsive" src="https://media.istockphoto.com/photos/pizza-pepperoni-picture-id666152944" />
+          <input type="checkbox" name="image[]" value="" />
+          <i class="fa fa-check hidden"></i>
+        </label>
       </div>
-    </div>
-    </div>
-    </p>
-    <div id="Paris" class="tabcontent">
-      <p></p>
-    </div>
-    <script src="/033f92c9c0c77603e210e4c58895e582c7f6d80713029ee25ff428b260209f46/ns.js"></script>
-</body>
-</header>
+      <div class="column">
+        <label class="image-checkbox">
+          <img class="img-responsive"
+            src="https://www.johnsonville.com/.imaging/mte/johnsonville-retail/640-wide/dam/johnsonville/recipe-images/easy-sausage-pizza/jcr:content/easy-sausage-pizza.jpg" />
+          <input type="checkbox" name="image[]" value="" />
+          <i class="fa fa-check hidden"></i>
+        </label>
+      </div>
+      <div class="column">
+        <label class="image-checkbox">
+          <img class="img-responsive"
+            src="https://images.contentstack.io/v3/assets/bltbb619fd5c667ba2d/blt2d4e43bcebe1548e/60ca60fa1e0505677a881227/Cheese_Pizza.jpg" />
+          <input type="checkbox" name="image[]" value="" />
+          <i class="fa fa-check hidden"></i>
+        </label>
+      </div>
 
-<script src="scripts/main.js"></script>
+      <h4>Breadsticks</h4>
+      <div class="column">
+        <label class="image-checkbox">
+          <img class="img-responsive" src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_GARLICT.jpg" />
+          <input type="checkbox" name="image[]" value="" />
+          <i class="fa fa-check hidden"></i>
+        </label>
+      </div>
+      <div class="column">
+        <label class="image-checkbox">
+          <img class="img-responsive" src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_PARMT.jpg" />
+          <input type="checkbox" name="image[]" value="" />
+          <i class="fa fa-check hidden"></i>
+        </label>
+      </div>
+      <div class="column">
+        <label class="image-checkbox">
+          <img class="img-responsive" src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_CINNAT.jpg" />
+          <input type="checkbox" name="image[]" value="" />
+          <i class="fa fa-check hidden"></i>
+        </label>
+      </div>
+
+      <h4>Dipping Sauces</h4>
+      <div class="column">
+        <label class="image-checkbox">
+          <img class="img-responsive"
+            src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_SIDGAR.jpg" />
+          <input type="checkbox" name="image[]" value="" />
+          <i class="fa fa-check hidden"></i>
+        </label>
+      </div>
+      <div class="column">
+        <label class="image-checkbox">
+          <img class="img-responsive"
+            src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_SIDMAR.jpg" />
+          <input type="checkbox" name="image[]" value="" />
+          <i class="fa fa-check hidden"></i>
+        </label>
+      </div>
+      <div class="column">
+        <label class="image-checkbox">
+          <img class="img-responsive"
+            src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_SIDICE.jpg" />
+          <input type="checkbox" name="image[]" value="" />
+          <i class="fa fa-check hidden"></i>
+        </label>
+      </div>
+
+      <h4>Drinks</h4>
+      <div class="column">
+        <label class="image-checkbox">
+          <img class="img-responsive"
+            src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_COKE.jpg" />
+          <input type="checkbox" name="image[]" value="" />
+          <i class="fa fa-check hidden"></i>
+        </label>
+      </div>
+      <div class="column">
+        <label class="image-checkbox">
+          <img class="img-responsive"
+            src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_DIET.jpg" />
+          <input type="checkbox" name="image[]" value="" />
+          <i class="fa fa-check hidden"></i>
+        </label>
+      </div>
+      <div class="column">
+        <label class="image-checkbox">
+          <img class="img-responsive"
+            src="  https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_ORAN.jpg" />
+          <input type="checkbox" name="image[]" value="" />
+          <i class="fa fa-check hidden"></i>
+        </label>
+      </div>
+
+    </div>
+  </header>
+
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
