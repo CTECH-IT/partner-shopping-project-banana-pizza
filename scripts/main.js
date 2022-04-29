@@ -15,3 +15,8 @@ $(".image-checkbox").on("click", function (e) {
 
   e.preventDefault();
 });
+
+// Submit Button
+document.getElementById('submit-button').addEventListener('click', function () {
+  console.log('submitted');
+});
