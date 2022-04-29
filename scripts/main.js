@@ -1,5 +1,4 @@
 // image gallery
-// init the state from the input
 $(".image-checkbox").each(function () {
   if ($(this).find('input[type="checkbox"]').first().attr("checked")) {
     $(this).addClass('image-checkbox-checked');
@@ -9,7 +8,6 @@ $(".image-checkbox").each(function () {
   }
 });
 
-// sync the state to the input
 $(".image-checkbox").on("click", function (e) {
   $(this).toggleClass('image-checkbox-checked');
   var $checkbox = $(this).find('input[type="checkbox"]');
