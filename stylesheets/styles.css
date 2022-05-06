@@ -1,3 +1,8 @@
+/*Coffee run css*/ form :focus:required:invalid { 
+    border-color: #a94442; 
+}
+
+
 img {
 	display: flex;
 	flex-direction: row;
