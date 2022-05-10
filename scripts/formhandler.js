@@ -31,7 +31,7 @@
         console.log(item.name + ' is ' + item.value);
       });
 
-      data['mycode'] = 'bananapizza'; // add a special code since we are all using the same data store
+      data['mycode'] = 'mj'; // add a special code since we are all using the same data store
 
       console.log(data);
       func(data); // call the function that was passed in on the data from the form

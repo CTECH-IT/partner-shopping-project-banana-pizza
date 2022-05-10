@@ -41,7 +41,7 @@
         const [k, v] = field;
         console.log(`----- ${k}: ${v}`);
 
-        if (v == 'bananapizza') {
+        if (v == 'mj') {
           validOrder = true;
         }
       });
