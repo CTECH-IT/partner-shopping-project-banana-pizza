@@ -8,72 +8,255 @@
   <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 
-<body class="container">
+<body>
   <header>
-    <h1>Banana Pizza</h1>
-  </header>
-  <section>
-    <div class="card card-default">
-      <div class="card-body">
-        <form data-coffee-order="form">
-          <div class="form-group">
-            <label for="coffeeOrder">Name</label>
-            <input class="form-control" name="coffee" id="coffeeOrder" autofocus required pattern="[a-zA-Z\s]+">
-          </div>
-          <div class="form-group">
-            <label for="emailInput">Email</label>
-            <input class="form-control" type="email" name="emailAddress" id="emailInput" value=""
-              placeholder="user@company.com" required>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size" value="Small">
-              Small
+ 
+ 
+    <div class="container">
+      <h3>Dominos Order Form</h3>
+      <p><a href="https://www.dominos.com/en/pages/order/menu#!/menu/category/viewall/">Menu Link</a>
+ 
+      <div class="row">
+        <div class="flex-item-1">
+          <h4>Pizza Toppings</h4>
+          <div class="column">
+            <label class="image-checkbox">
+              <img class="img-responsive"
+                src="https://media.istockphoto.com/photos/pizza-pepperoni-picture-id666152944" />
+              <input type="checkbox" name="pepperoni" value="" />
+              <i class="fa fa-check hidden"></i>
             </label>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size" value="Medium" checked>
-              Medium
+          <div class="column">
+            <label class="image-checkbox">
+              <img class="img-responsive"
+                src="https://www.johnsonville.com/.imaging/mte/johnsonville-retail/640-wide/dam/johnsonville/recipe-images/easy-sausage-pizza/jcr:content/easy-sausage-pizza.jpg" />
+              <input type="checkbox" name="sausage" value="" />
+              <i class="fa fa-check hidden"></i>
             </label>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size" value="Large">
-              Large
+          <div class="column">
+            <label class="image-checkbox">
+              <img class="img-responsive"
+                src="https://images.contentstack.io/v3/assets/bltbb619fd5c667ba2d/blt2d4e43bcebe1548e/60ca60fa1e0505677a881227/Cheese_Pizza.jpg" />
+              <input type="checkbox" name="cheese" value="" />
+              <i class="fa fa-check hidden"></i>
             </label>
           </div>
-          <div class="form-group">
-            <label for="toppings">Toppings</label>
-            <select id="toppings" class="form-control" name="toppings">
-              <option value="Topping">Choose Topping</option>
-              <option value="Pepperoni">Pepperoni</option>
-              <option value="Sausage">Sausage</option>
-              <option value="Cheese">Cheese</option>
-            </select>
+        </div>
+ 
+        <div class="flex-item-2">
+          <h4>Breadsticks</h4>
+          <div class="column">
+            <label class="image-checkbox">
+              <img class="img-responsive"
+                src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_GARLICT.jpg" />
+              <input type="checkbox" name="Garlic" value="" />
+              <i class="fa fa-check hidden"></i>
+            </label>
           </div>
-          <div class="form-group">
-            <label for="breadsticks">Breadsticks</label>
-            <select id="breadsticks" class="form-control" name="breadsticks">
-              <option value="Breadstick">Choose Breadsticks</option>
-              <option value="Garlic">Garlic</option>
-              <option value="Parmesan">Parmesan</option>
-              <option value="Cinnamon">Cinnamon</option>
-            </select>
+          <div class="column">
+            <label class="image-checkbox">
+              <img class="img-responsive"
+                src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_PARMT.jpg" />
+              <input type="checkbox" name="Parmesan" value="" />
+              <i class="fa fa-check hidden"></i>
+            </label>
           </div>
-          <div class="form-group">
-            <label for="drinks">Drinks</label>
-            <select id="drinks" class="form-control" name="flavor">
-              <option value="Drinks">Choose Drink</option>
-                <option value="Coke">Coke</option>
-                <option value="Dietcoke">Diet Coke</option>
-                <option value="Rootbeer">Root Beer</option>
-            </select>
+          <div class="column">
+            <label class="image-checkbox">
+              <img class="img-responsive"
+                src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_CINNAT.jpg" />
+              <input type="checkbox" name="cinnamon" value="" />
+              <i class="fa fa-check hidden"></i>
+            </label>
           </div>
-
-
+        </div>
+ 
+        <div class="flex-item-3">
+          <h4>Dipping Sauces</h4>
+          <div class="column" class="gallery">
+            <label class="image-checkbox">
+              <img class="img-responsive"
+                src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_SIDGAR.jpg" />
+              <input type="checkbox" name="garlic" value="" />
+              <i class="fa fa-check hidden"></i>
+            </label>
+          </div>
+          <div class="column" class="gallery">
+            <label class="image-checkbox">
+              <img class="img-responsive"
+                src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_SIDMAR.jpg" />
+              <input type="checkbox" name="marinera" value="" />
+              <i class="fa fa-check hidden"></i>
+            </label>
+          </div>
+          <div class="column" class="gallery">
+            <label class="image-checkbox">
+              <img class="img-responsive"
+                src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_SIDICE.jpg" />
+              <input type="checkbox" name="icing" value="" />
+              <i class="fa fa-check hidden"></i>
+            </label>
+          </div>
+        </div>
+ 
+        <div class="flex-item-4">
+          <h4>Drinks</h4>
+          <div class="column" class="gallery">
+            <label class="image-checkbox">
+              <img class="img-responsive"
+                src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_COKE.jpg" />
+              <input type="checkbox" name="coke" value="" />
+              <i class="fa fa-check hidden"></i>
+            </label>
+          </div>
+          <div class="column">
+            <label class="image-checkbox">
+              <img class="img-responsive"
+                src="https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_DIET.jpg" />
+              <input type="checkbox" name="dietcoke" value="" />
+              <i class="fa fa-check hidden"></i>
+            </label>
+          </div>
+          <div class="column">
+            <label class="image-checkbox">
+              <img class="img-responsive"
+                src="  https://cache.dominos.com/olo/6_83_4/assets/build/market/US/_en/images/img/products/larges/F_ORAN.jpg" />
+              <input type="checkbox" name="fanta" value="" />
+              <i class="fa fa-check hidden"></i>
+            </label>
+          </div>
+        </div>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+ 
+<p> _____________________________________________________________________________________________________________________________________________________________________ </p>
+ 
+      <div class="container">
+        <h3>Caribou Order Form</h3>
+        <p><a href="https://www.cariboucoffee.com/menu">Menu Link</a>
+ 
+        <div class="row">
+          <div class="flex-item-1">
+            <h4>Cold Coffee</h4>
+            <div class="column">
+              <label class="image-checkbox">
+                <img class="img-responsive"
+                  src="https://imgsvc.cariboucoffee.com/%7B%22resize%22:300%7D/https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-00888d6e-e1cc-4c59-95be-6f539a5ed1bc.png" />
+                <input type="checkbox" name="icedlatte" value="" />
+                <i class="fa fa-check hidden"></i>
+              </label>
+            </div>
+            <div class="column">
+              <label class="image-checkbox">
+                <img class="img-responsive"
+                  src="https://imgsvc.cariboucoffee.com/%7B%22resize%22:300%7D/https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-8388f167-8f43-48a8-8b24-82d3d294da58.png" />
+                <input type="checkbox" name="highrise" value="" />
+                <i class="fa fa-check hidden"></i>
+              </label>
+            </div>
+            <div class="column">
+              <label class="image-checkbox">
+                <img class="img-responsive"
+                  src="https://imgsvc.cariboucoffee.com/%7B%22resize%22:300%7D/https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-1e5422ed-e4ca-456c-8fba-a102c8635866.jpeg" />
+                <input type="checkbox" name="turtlemocha" value="" />
+                <i class="fa fa-check hidden"></i>
+              </label>
+            </div>
+          </div>
+ 
+          <div class="flex-item-2">
+            <h4>Hot Coffee</h4>
+            <div class="column">
+              <label class="image-checkbox">
+                <img class="img-responsive"
+                  src="https://imgsvc.cariboucoffee.com/%7B%22resize%22:300%7D/https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-3b5ec27a-db62-449c-aeed-154c2462c3d1.png" />
+                <input type="checkbox" name="hotchocolate" value="" />
+                <i class="fa fa-check hidden"></i>
+              </label>
+            </div>
+            <div class="column">
+              <label class="image-checkbox">
+                <img class="img-responsive"
+                  src="https://imgsvc.cariboucoffee.com/%7B%22resize%22:300%7D/https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-b7117f30-85a5-42a4-90da-2947d4a0c3b4.png" />
+                <input type="checkbox" name="cappucino" value="" />
+                <i class="fa fa-check hidden"></i>
+              </label>
+            </div>
+            <div class="column">
+              <label class="image-checkbox">
+                <img class="img-responsive"
+                  src="https://imgsvc.cariboucoffee.com/%7B%22resize%22:300%7D/https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-546fec43-577d-4999-a8ba-07d6b868306d.png" />
+                <input type="checkbox" name="americano" value="" />
+                <i class="fa fa-check hidden"></i>
+              </label>
+            </div>
+          </div>
+ 
+          <div class="flex-item-3">
+            <h4>Breakfast</h4>
+            <div class="column" class="gallery">
+              <label class="image-checkbox">
+                <img class="img-responsive"
+                  src="https://imgsvc.cariboucoffee.com/%7B%22resize%22:300%7D/https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-27c68f10-8393-42de-9e05-9698e3be03e3.jpeg" />
+                <input type="checkbox" name="everything" value="" />
+                <i class="fa fa-check hidden"></i>
+              </label>
+            </div>
+            <div class="column" class="gallery">
+              <label class="image-checkbox">
+                <img class="img-responsive"
+                  src="https://imgsvc.cariboucoffee.com/%7B%22resize%22:300%7D/https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-12a3c482-ca10-4d99-a7fb-a4978f9e07c9.jpeg" />
+                <input type="checkbox" name="cinnamon" value="" />
+                <i class="fa fa-check hidden"></i>
+              </label>
+            </div>
+            <div class="column" class="gallery">
+              <label class="image-checkbox">
+                <img class="img-responsive"
+                  src="https://imgsvc.cariboucoffee.com/%7B%22resize%22:300%7D/https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-bdfe4aa6-2385-4a46-aa63-e24b7fe19df2.jpeg" />
+                <input type="checkbox" name="asiago" value="" />
+                <i class="fa fa-check hidden"></i>
+              </label>
+            </div>
+          </div>
+ 
+          <div class="flex-item-4">
+            <h4>Lunch</h4>
+            <div class="column" class="gallery">
+              <label class="image-checkbox">
+                <img class="img-responsive"
+                  src="https://imgsvc.cariboucoffee.com/%7B%22resize%22:300%7D/https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-f195f771-8ab0-4c0e-8541-f30640b09452.png" />
+                <input type="checkbox" name="burrito" value="" />
+                <i class="fa fa-check hidden"></i>
+              </label>
+            </div>
+            <div class="column">
+              <label class="image-checkbox">
+                <img class="img-responsive"
+                  src="https://imgsvc.cariboucoffee.com/%7B%22resize%22:300%7D/https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-e0e31001-039b-4675-980a-d9ab4268a6b7.jpeg" />
+                <input type="checkbox" name="hameggswiss" value="" />
+                <i class="fa fa-check hidden"></i>
+              </label>
+            </div>
+            <div class="column">
+              <label class="image-checkbox">
+                <img class="img-responsive"
+                  src="https://imgsvc.cariboucoffee.com/%7B%22resize%22:300%7D/https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-082f6757-e747-42df-8d68-ec4c4153575f.jpeg" />
+                <input type="checkbox" name="glutenfree" value="" />
+                <i class="fa fa-check hidden"></i>
+              </label>
+            </div>
+          </div>
+ 
+        </div>
+ 
+  </header>
+ 
+  <script src="scripts/main.js"></script>
+</body>
+      </div>
+      <button type="submit" class="btn btn-primary">Order</button>
       <button type="reset" class="btn btn-secondary">Reset</button>
       </form>
     </div>
